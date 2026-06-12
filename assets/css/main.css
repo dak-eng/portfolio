@@ -173,6 +173,20 @@ h6 {
   color: var(--heading-color);
 }
 
+.header-icons i {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 0 8px;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.header-icons i:hover {
+  opacity: 1;
+  color: #c084fc !important;
+  transform: translateY(-2px);
+}
+
 .scrolled .header {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
 }
@@ -672,10 +686,12 @@ section,
 .hero:before {
   content: "";
    background: #020024;
-   background: radial-gradient(
-    circle, rgba(2, 0, 36, 1) 0%,
-    rgba(40, 0, 66, 1) 61%,
-    rgba(208, 0, 255, 1) 100%);
+  background:
+    radial-gradient(circle at 20% 30%, #5900ff40, transparent 30%),
+    radial-gradient(circle at 80% 70%, #8000ff40, transparent 30%),
+    radial-gradient(circle at 50% 50%, #00d4ff20, transparent 40%),
+   radial-gradient(circle at 50% 50%, #8c00ff20, transparent 40%),
+    #000;
   position: absolute;
   inset: 0;
   z-index: 2;
